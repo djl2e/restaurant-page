@@ -17,6 +17,7 @@ function home() {
     const aboutUsHeader = document.createElement("h3");
     const aboutUsInfo = document.createElement("p");
 
+    aboutUs.classList.add("about-us");
     aboutUsHeader.textContent = "About Us";
     aboutUsInfo.textContent = "Lee's Kimchi Market aims to serve the authentic Korean taste to customers all around the globe. \
         Our recipe has been passed on for 4 generations and has not been changed ever since our founder, Ki Lee, opened the store over a century ago. \
@@ -29,6 +30,7 @@ function home() {
     const hoursHeader = document.createElement("h3");
     const hoursInfo = document.createElement("ul");
 
+    hours.classList.add("hours");
     hoursHeader.textContent = "Hours";
     for (let key in storeHours) {
         const dayHour = document.createElement("li");
@@ -42,6 +44,7 @@ function home() {
     const locationHeader = document.createElement("h3");
     const locationInfo = document.createElement("p");
 
+    location.classList.add("location");
     locationHeader.textContent = "Location"
     locationInfo.textContent = "123 Tiger St, New York, NY 10003"
     location.appendChild(locationHeader);

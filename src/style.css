@@ -1,0 +1,128 @@
+:root {
+    --black-background: rgba(0, 0, 0, 0.6);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: beige;
+    background-image: url("./img/stone-wall.jpg");
+    background-repeat: no-repeat;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.tabs {
+    position: absolute;
+    top: 10%;
+    left: 4%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.tabs button {
+    background-color: var(--black-background);
+    font-size: 20px;
+    color: beige;
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.4s;
+}
+
+.tabs button:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+#content {
+    width: 50vw;
+    height: 80vh;
+    border-radius: 5px;
+    background-color: var(--black-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#content div {
+    width: 40vw;
+}
+
+#content h1 {
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+
+#content h3 {
+    margin: 10px;
+    padding-left: 60px;
+    text-decoration: underline;
+}
+
+.about-us, .hours, .location {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us, .hours {
+    padding-bottom: 10px;
+}
+
+.about-us p {
+    align-self: center;
+    width: 25vw;
+}
+
+.hours ul {
+    align-self: center;
+    padding-right: 50px;
+}
+
+.hours li {
+    margin: 5px;
+}
+
+.location p {
+    align-self: center;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+#content .menu-left {
+    width: 20vw;
+}
+
+#content .menu-top-left {
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+
+}
+
+#content .menu-top-left h3 {
+    padding-left: 0;
+}
+
+#content .menu-top-left p {
+    padding-right: 20px;
+}
