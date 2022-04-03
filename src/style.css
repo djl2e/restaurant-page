@@ -103,7 +103,7 @@ img {
 
 .menu {
     display: flex;
-    gap: 30px;
+    gap: 20px;
     margin-bottom: 20px;
 }
 
@@ -111,18 +111,50 @@ img {
     width: 20vw;
 }
 
+#content .menu img {
+    padding-left: 40px;
+}
+
 #content .menu-top-left {
     width: inherit;
     display: flex;
     justify-content: space-between;
-    align-self: center;
+    align-items: center;
 
 }
 
 #content .menu-top-left h3 {
     padding-left: 0;
+    margin: 0;
 }
 
 #content .menu-top-left p {
     padding-right: 20px;
+    margin-bottom: 10px;
+}
+
+#content .contact-container {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#content .contact {
+    width: 20vw;
+}
+
+#content h3 {
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+#content .info {
+    width: 15vw;   
+}
+
+#content .info p {
+    padding-left: 50px;
 }

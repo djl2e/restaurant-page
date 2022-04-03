@@ -1,3 +1,5 @@
+const content = document.querySelector("#content");
+
 const storeHours = {
     "Monday": "9am - 6pm",
     "Tuesday": "9am - 6pm",
@@ -9,7 +11,6 @@ const storeHours = {
 
 
 function home() {
-    const content = document.querySelector("#content");
     const header = document.createElement("h1");
     header.textContent = "Lee's Kimchi Market"
 

@@ -2,6 +2,7 @@ import "./style.css";
 import tabs from "./tabs.js";
 import home from "./home.js";
 import menu from "./menu.js";
+import contact from "./contact.js";
 
 let currentTab = "home";
 const content = document.querySelector("#content");
@@ -33,9 +34,7 @@ function clickTab() {
 }
 
 function removeDisplay() {
-    while (content.firstChild) {
-        content.removeChild(content.lastChild);
-    }
+    content.innerHTML = "";
 }
 
 function main() {
